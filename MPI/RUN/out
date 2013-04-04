@@ -1,0 +1,812 @@
+
+  Neigbour indices computed.
+
+
+  Lattice:   12 x  12 x  12 x   4
+
+
+  Neigbour indices computed.
+
+
+  Lattice:   12 x  12 x  12 x   4
+
+ thermalization step            1 istart =           2
+ thermalization step            1 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            2 istart =           2
+ thermalization step            2 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            3 istart =           2
+ thermalization step            3 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            4 istart =           2
+ thermalization step            4 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            5 istart =           2
+ thermalization step            5 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            6 istart =           2
+ thermalization step            6 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            7 istart =           2
+ thermalization step            7 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            8 istart =           2
+ thermalization step            8 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step            9 istart =           2
+ thermalization step            9 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           10 istart =           2
+ thermalization step           10 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           11 istart =           2
+ thermalization step           11 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           12 istart =           2
+ thermalization step           12 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           13 istart =           2
+ thermalization step           13 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           14 istart =           2
+ thermalization step           14 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           15 istart =           2
+ thermalization step           15 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           16 istart =           2
+ thermalization step           16 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           17 istart =           2
+ thermalization step           17 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           18 istart =           2
+ thermalization step           18 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           19 istart =           2
+ thermalization step           19 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           20 istart =           2
+ thermalization step           20 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           21 istart =           0
+ thermalization step           21 istart =           2
+ Back from SendRecv2 Back from SendRecv2
+
+ thermalization step           22 istart =           2
+ thermalization step           22 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           23 istart =           2
+ thermalization step           23 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           24 istart =           2
+ thermalization step           24 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           25 istart =           2
+ thermalization step           25 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           26 istart =           2
+ thermalization step           26 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           27 istart =           2
+ thermalization step           27 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           28 istart =           2
+ thermalization step           28 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           29 istart =           2
+ thermalization step           29 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           30 istart =           2
+ thermalization step           30 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           31 istart =           2
+ thermalization step           31 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           32 istart =           2
+ thermalization step           32 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           33 istart =           2
+ thermalization step           33 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           34 istart =           2
+ thermalization step           34 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           35 istart =           2
+ thermalization step           35 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           36 istart =           2
+ thermalization step           36 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           37 istart =           2
+ thermalization step           37 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           38 istart =           2
+ thermalization step           38 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           39 istart =           2
+ thermalization step           39 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           40 istart =           2
+ thermalization step           40 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           41 istart =           2
+ thermalization step           41 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           42 istart =           2
+ thermalization step           42 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           43 istart =           2
+ thermalization step           43 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           44 istart =           2
+ thermalization step           44 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           45 istart =           2
+ thermalization step           45 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           46 istart =           2
+ thermalization step           46 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           47 istart =           2
+ thermalization step           47 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           48 istart =           2
+ thermalization step           48 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           49 istart =           2
+ thermalization step           49 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           50 istart =           2
+ thermalization step           50 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           51 istart =           2
+ thermalization step           51 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           52 istart =           2
+ thermalization step           52 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           53 istart =           2
+ thermalization step           53 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           54 istart =           2
+ thermalization step           54 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           55 istart =           2
+ thermalization step           55 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           56 istart =           2
+ thermalization step           56 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           57 istart =           2
+ thermalization step           57 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           58 istart =           2
+ thermalization step           58 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           59 istart =           2
+ thermalization step           59 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           60 istart =           2
+ thermalization step           60 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           61 istart =           2
+ thermalization step           61 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           62 istart =           2
+ thermalization step           62 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           63 istart =           2
+ thermalization step           63 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           64 istart =           2
+ thermalization step           64 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           65 istart =           2
+ thermalization step           65 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           66 istart =           2
+ thermalization step           66 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           67 istart =           2
+ thermalization step           67 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           68 istart =           2
+ thermalization step           68 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           69 istart =           2
+ thermalization step           69 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           70 istart =           2
+ thermalization step           70 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           71 istart =           2
+ thermalization step           71 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           72 istart =           2
+ thermalization step           72 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           73 istart =           2
+ thermalization step           73 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           74 istart =           2
+ thermalization step           74 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           75 istart =           2
+ thermalization step           75 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           76 istart =           2
+ thermalization step           76 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           77 istart =           2
+ thermalization step           77 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           78 istart =           2
+ thermalization step           78 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           79 istart =           2
+ thermalization step           79 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           80 istart =           2
+ thermalization step           80 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           81 istart =           2
+ thermalization step           81 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           82 istart =           2
+ thermalization step           82 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           83 istart =           2
+ thermalization step           83 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           84 istart =           2
+ thermalization step           84 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           85 istart =           2
+ thermalization step           85 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           86 istart =           2
+ thermalization step           86 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           87 istart =           2
+ thermalization step           87 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           88 istart =           2
+ thermalization step           88 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           89 istart =           2
+ thermalization step           89 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           90 istart =           2
+ thermalization step           90 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           91 istart =           2
+ thermalization step           91 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           92 istart =           2
+ thermalization step           92 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           93 istart =           2
+ thermalization step           93 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           94 istart =           2
+ thermalization step           94 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           95 istart =           2
+ thermalization step           95 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           96 istart =           2
+ thermalization step           96 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           97 istart =           2
+ thermalization step           97 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           98 istart =           2
+ thermalization step           98 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step           99 istart =           2
+ thermalization step           99 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          100 istart =           2
+ thermalization step          100 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          101 istart =           2
+ thermalization step          101 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          102 istart =           2
+ thermalization step          102 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          103 istart =           2
+ thermalization step          103 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          104 istart =           2
+ thermalization step          104 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          105 istart =           2
+ thermalization step          105 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          106 istart =           2
+ thermalization step          106 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          107 istart =           2
+ thermalization step          107 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          108 istart =           2
+ thermalization step          108 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          109 istart =           2
+ thermalization step          109 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          110 istart =           2
+ thermalization step          110 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          111 istart =           2
+ thermalization step          111 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          112 istart =           2
+ thermalization step          112 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          113 istart =           2
+ thermalization step          113 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          114 istart =           2
+ thermalization step          114 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          115 istart =           2
+ thermalization step          115 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          116 istart =           2
+ thermalization step          116 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          117 istart =           2
+ thermalization step          117 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          118 istart =           2
+ thermalization step          118 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          119 istart =           2
+ thermalization step          119 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          120 istart =           2
+ thermalization step          120 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          121 istart =           2
+ thermalization step          121 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          122 istart =           2
+ thermalization step          122 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          123 istart =           2
+ thermalization step          123 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          124 istart =           2
+ thermalization step          124 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          125 istart =           2
+ thermalization step          125 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          126 istart =           2
+ thermalization step          126 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          127 istart =           2
+ thermalization step          127 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          128 istart =           2
+ thermalization step          128 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          129 istart =           2
+ thermalization step          129 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          130 istart =           2
+ thermalization step          130 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          131 istart =           2
+ thermalization step          131 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          132 istart =           2
+ thermalization step          132 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          133 istart =           2
+ thermalization step          133 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          134 istart =           2
+ thermalization step          134 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          135 istart =           2
+ thermalization step          135 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          136 istart =           2
+ thermalization step          136 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          137 istart =           2
+ thermalization step          137 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          138 istart =           2
+ thermalization step          138 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          139 istart =           2
+ thermalization step          139 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          140 istart =           2
+ thermalization step          140 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          141 istart =           2
+ thermalization step          141 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          142 istart =           2
+ thermalization step          142 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          143 istart =           2
+ thermalization step          143 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          144 istart =           2
+ thermalization step          144 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          145 istart =           2
+ thermalization step          145 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          146 istart =           2
+ thermalization step          146 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          147 istart =           2
+ thermalization step          147 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          148 istart =           2
+ thermalization step          148 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          149 istart =           2
+ thermalization step          149 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          150 istart =           2
+ thermalization step          150 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          151 istart =           2
+ thermalization step          151 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          152 istart =           2
+ thermalization step          152 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          153 istart =           2
+ thermalization step          153 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          154 istart =           2
+ thermalization step          154 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          155 istart =           2
+ thermalization step          155 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          156 istart =           2
+ thermalization step          156 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          157 istart =           2
+ thermalization step          157 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          158 istart =           2
+ thermalization step          158 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          159 istart =           2
+ thermalization step          159 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          160 istart =           2
+ thermalization step          160 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          161 istart =           2
+ thermalization step          161 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          162 istart =           2
+ thermalization step          162 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          163 istart =           2
+ thermalization step          163 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          164 istart =           2
+ thermalization step          164 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          165 istart =           2
+ thermalization step          165 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          166 istart =           2
+ thermalization step          166 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          167 istart =           2
+ thermalization step          167 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          168 istart =           2
+ thermalization step          168 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          169 istart =           2
+ thermalization step          169 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          170 istart =           2
+ thermalization step          170 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          171 istart =           2
+ thermalization step          171 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          172 istart =           2
+ thermalization step          172 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          173 istart =           2
+ thermalization step          173 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          174 istart =           2
+ thermalization step          174 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          175 istart =           2
+ thermalization step          175 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          176 istart =           2
+ thermalization step          176 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          177 istart =           2
+ thermalization step          177 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          178 istart =           2
+ thermalization step          178 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          179 istart =           2
+ thermalization step          179 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          180 istart =           2
+ thermalization step          180 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          181 istart =           2
+ thermalization step          181 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          182 istart =           2
+ thermalization step          182 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          183 istart =           2
+ thermalization step          183 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          184 istart =           2
+ thermalization step          184 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          185 istart =           2
+ thermalization step          185 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          186 istart =           2
+ thermalization step          186 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          187 istart =           2
+ thermalization step          187 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          188 istart =           2
+ thermalization step          188 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          189 istart =           2
+ thermalization step          189 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          190 istart =           2
+ thermalization step          190 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          191 istart =           2
+ thermalization step          191 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          192 istart =           2
+ thermalization step          192 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          193 istart =           2
+ thermalization step          193 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          194 istart =           2
+ thermalization step          194 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          195 istart =           2
+ thermalization step          195 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          196 istart =           2
+ thermalization step          196 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          197 istart =           2
+ thermalization step          197 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          198 istart =           2
+ thermalization step          198 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          199 istart =           2
+ thermalization step          199 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2
+ thermalization step          200 istart =           2
+ thermalization step          200 istart =           0
+ Back from SendRecv2
+ Back from SendRecv2

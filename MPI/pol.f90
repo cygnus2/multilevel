@@ -1,0 +1,295 @@
+         program main
+!
+      use lattsize
+      use precdef
+      use filecom
+      use stapcom
+      use umastcom
+      use polcom
+      use prodcom
+      use prodncom
+      use ranlxd_generator
+      use paramod
+!
+      implicit none
+  include 'mpif.h'
+!
+      real :: beta
+      real(kind=double) :: xnorm
+      complex(kind=double) :: pave,pav
+      integer :: i,j,k,iseed,mm,nn,jj,iupd,iti,ii,kk,icount
+      integer :: l1,l2,l3,l4,l5,l6,l7,l8,ll1,ll2,ll3,ll4,ll5,ll6
+      integer :: m1,m2,m3,m4,request,base
+      integer :: itherm,imes,numprocs,istart,jstart,src,dest
+      integer :: send_status(MPI_STATUS_SIZE),recv_status(MPI_STATUS_SIZE)
+      complex(kind=double),dimension(3,3,ncu,3,leng4/2) :: TNF,TF
+      complex(kind=double),dimension(3,3,leng4/itdim) :: TN1,T1
+      complex(kind=double),dimension(3,3,ncu) :: PF
+      complex(kind=double),dimension(3,3,1+leng4/itdim) :: PF1
+      character(80) :: input_line
+!
+
+  call MPI_INIT( ierr )
+
+  call MPI_COMM_RANK( MPI_COMM_WORLD, rank, ierr )
+
+  is_master = .false.
+  if ( master == rank) is_master = .true.
+
+  call MPI_COMM_SIZE( MPI_COMM_WORLD, numprocs, ierr )
+
+!  print *, "Process ", rank, " of ", numprocs, " is alive"
+!
+    if(is_master) then
+        read(*,'(A80)') input_line
+     end if
+!
+       call MPI_BCAST(input_line,80,MPI_CHARACTER,0,MPI_COMM_WORLD,ierr)
+!
+       read(input_line,*) jstart,beta,iseed,iupd,itherm,imes
+!       write(*,*)jstart,beta,iseed,iupd,itherm,imes,rank
+       
+       base=rank*tsloc*ncu
+!
+!  Setting up address variables
+!
+        call mk_index
+!
+        call rlxd_init(1,iseed+rank)
+        call init(jstart)
+!
+!        write(*,*)"Starting with itdim=",itdim," beta=",beta," seed=",iseed+rank
+!        write(*,*)"Going to do ",imes," measurements"
+!   Thermalisation
+        if(jstart.ge.0) then
+         do j=1,itherm
+           istart=mod((rank+1)*tsloc,leng4)
+           write(*,*) "thermalization step ",j, "istart =",istart
+           call boundstaples(istart,base)
+
+         dest=mod(rank+1,activenodes)
+         src=mod(rank+activenodes-1,activenodes)
+!         write(*,*) "rank =",rank,"dest =",dest," src =",src,"istart=",istart,"base=",base
+
+         call MPI_ISSend(bndstp, 27*ncu, MPI_DOUBLE_COMPLEX, dest, 1,MPI_COMM_WORLD, request, ierr)
+         call MPI_Recv(bndstp_r, 27*ncu, MPI_DOUBLE_COMPLEX, src, 1,MPI_COMM_WORLD, recv_status, ierr)
+         call MPI_Wait(recv_status,send_status,ierr)
+
+!           write(*,*) "Back from SendRecv1"
+
+           call bs_update(beta,rank*tsloc+1,base)
+
+           icount=0
+           do ii=tsloc*ncu+1,(tsloc+1)*ncu
+           icount=icount+1
+           do kk=1,3
+           bndstp(:,:,kk,icount)=umastloc(:,:,kk,ii)
+           enddo
+           enddo
+
+         call MPI_ISSend(bndstp, 27*ncu, MPI_DOUBLE_COMPLEX, dest, 1,MPI_COMM_WORLD, request, ierr)
+         call MPI_Recv(bndstp_r, 27*ncu, MPI_DOUBLE_COMPLEX, src, 1,MPI_COMM_WORLD, recv_status, ierr)
+         call MPI_Wait(recv_status,send_status,ierr)
+
+           write(*,*) "Back from SendRecv2"
+
+           icount=0
+           do ii=tsloc*ncu+1,(tsloc+1)*ncu
+           icount=icount+1
+           do kk=1,3
+           umastloc(:,:,kk,ii)=bndstp_r(:,:,kk,icount)
+           enddo
+           enddo
+
+         do iti=rank*tsloc+1,(rank+1)*tsloc,itdim
+           call b_update(beta,iti,base)
+           call sub_update(beta,iti,base)
+         enddo
+
+  !!     do k=1,3
+  !!       istart=mod((rank+1)*tsloc,leng4)
+  !!       call boundstaples(istart,base)
+
+  !!     call MPI_ISSend(bndstp, 27*ncu, MPI_DOUBLE_COMPLEX, dest, 1,MPI_COMM_WORLD, request, ierr)
+  !!     call MPI_Recv(bndstp_r, 27*ncu, MPI_DOUBLE_COMPLEX, src, 1,MPI_COMM_WORLD, recv_status, ierr)
+  !!     call MPI_Wait(recv_status,send_status,ierr)
+!           write(*,*) "Back from SendRecv3"
+
+  !!      call bsover(rank*tsloc+1,base)
+
+  !!       icount=0
+  !!       do ii=tsloc*ncu+1,(tsloc+1)*ncu
+  !!       icount=icount+1
+  !!       do kk=1,3
+  !!       bndstp(:,:,kk,icount)=umastloc(:,:,kk,ii)
+  !!       enddo
+  !!       enddo
+
+  !!     call MPI_ISSend(bndstp, 27*ncu, MPI_DOUBLE_COMPLEX, dest, 1,MPI_COMM_WORLD, request, ierr)
+  !!     call MPI_Recv(bndstp_r, 27*ncu, MPI_DOUBLE_COMPLEX, src, 1,MPI_COMM_WORLD, recv_status, ierr)
+  !!     call MPI_Wait(recv_status,send_status,ierr)
+  !!       write(*,*) "Back from SendRecv4"
+
+  !!       icount=0
+  !!       do ii=tsloc*ncu+1,(tsloc+1)*ncu
+  !!       icount=icount+1
+  !!       do kk=1,3
+  !!       umastloc(:,:,kk,ii)=bndstp_r(:,:,kk,icount)
+  !!       enddo
+  !!       enddo
+
+  !!      do iti=rank*tsloc+1,(rank+1)*tsloc,itdim
+  !!         call bover(iti,base)
+  !!         call subover(iti,base)
+  !!      enddo
+  !!      write(*,*) "Rank :",rank,"back from sub-over"
+  !!     enddo
+!         call unitar
+          call plaqmeas(rank)
+         enddo
+        endif
+#IFDEF MES
+        go to 1000
+!   Measurements
+        write(*,*) 'Rank ',rank,' Started with measurements'
+        do j=1,imes
+        do i=1,10
+           istart=mod((rank+1)*tsloc,leng4)
+           call boundstaples(istart)
+         do iti=rank*tsloc+1,(rank+1)*tsloc
+           call bs_update(beta,iti)
+           call b_update(beta,iti)
+           call sub_update(beta,iti)
+         enddo
+         do k=1,3
+           call boundstaples(istart)
+         do iti=rank*tsloc+1,(rank+1)*tsloc
+             call bsover(iti)
+             call bover(iti)
+             call subover(iti)
+         enddo
+         enddo 
+        enddo
+!
+! Going into measurement routine
+!
+       TP=0
+       TNP=0
+       POL=0
+!
+       do jj=1,iupd
+!
+          call staple         ! computes the staples
+          call multihit(beta)      ! analytic SU(3) integral (de Forcrand)
+!
+          call makePOL
+          call makeTP
+          call makeTNP
+!
+          do iti=1,leng4,itdim
+             call b_update(beta,iti)
+             call bover(iti)
+             call sub_update(beta,iti)
+             call subover(iti)
+          enddo
+       enddo
+!
+        POL=POL/float(iupd)
+        TP=TP/float(iupd)
+        TNP=TNP/float(iupd)
+!
+!   Calculate the Polyakov loop
+!
+        do l1=1,ncu
+!
+             PF1=0
+             PF1(1,1,1)=cmplx(1d0,0d0)
+             PF1(2,2,1)=cmplx(1d0,0d0)
+             PF1(3,3,1)=cmplx(1d0,0d0)
+!
+        do l8=1,leng4/itdim
+           do l3=1,3
+           do l4=1,3
+              PF(l3,l4,l1)=cmplx(0d0,0d0)
+              do ll1=1,3
+                 PF(l3,l4,l1)=PF(l3,l4,l1) + PF1(l3,ll1,l8)*POL(ll1,l4,l1,l8)
+              end do
+              PF1(l3,l4,l8+1)=PF(l3,l4,l1)
+           end do
+           end do
+        end do
+!
+        end do
+!
+!   Polyakov loop measurement
+!
+           pave=0
+           do m1=1,ncu
+           do m3=1,3
+              pave=pave+PF(m3,m3,m1)
+           end do
+           end do
+           pav=pave/float(3*ncu)
+        write(40+rank,*) REAL(pav),AIMAG(pav)
+!
+!   Calculate the correlation functions
+!
+        do l2=1,dir-1
+        do l1=1,ncu
+!
+             T1=0
+             TN1=0
+!
+        do l5=1,leng4/2
+        T1(:,:,1)=TP(:,:,l1,l2,1,l5)
+        TN1(:,:,1)=TNP(:,:,l1,l2,1,l5)
+        do l8=2,leng4/itdim
+           do l3=1,3
+           do l4=1,3
+              TF(l3,l4,l1,l2,l5)=cmplx(0d0,0d0)
+              TNF(l3,l4,l1,l2,l5)=cmplx(0d0,0d0)
+              do ll1=1,3
+                 TF(l3,l4,l1,l2,l5)=TF(l3,l4,l1,l2,l5) + T1(l3,ll1,l8-1)*TP(ll1,l4,l1,l2,l8,l5)
+                 TNF(l3,l4,l1,l2,l5)=TNF(l3,l4,l1,l2,l5) + TN1(l3,ll1,l8-1)*TNP(ll1,l4,l1,l2,l8,l5)
+              end do
+              T1(l3,l4,l8)=TF(l3,l4,l1,l2,l5)
+              TN1(l3,l4,l8)=TNF(l3,l4,l1,l2,l5)
+            end do
+            end do
+        end do
+!
+        end do
+!
+        end do
+        end do
+!
+!       Electric Field Correlator Measurements
+!
+           do m4=1,leng4/2
+           pave=0
+           do m2=1,dir-1
+           do m1=1,ncu
+           do m3=1,3
+              pave=pave+TNF(m3,m3,m1,m2,m4)+TF(m3,m3,m1,m2,m4)
+           end do
+           end do
+           end do
+           pav=pave/float(2*3*3*ncu)
+           write(50+10*rank+m4,*) REAL(pav),AIMAG(pav)
+           end do
+!
+! Measurement complete
+!
+        call unitar
+        end do
+1000    continue
+#ENDIF
+!10       continue
+!        call storegauge(j)
+        umastloc1(:,:,:,:)=umastloc(:,:,:,:ncu*tsloc)
+    call MPI_ALLGATHER(umastloc1,36*ncu*tsloc,MPI_DOUBLE_COMPLEX, &
+               umast,36*ncu*tsloc,MPI_DOUBLE_COMPLEX,MPI_COMM_WORLD,ierr)
+
+        call MPI_FINALIZE(ierr)
+        call plaqmeasfull
+         end
