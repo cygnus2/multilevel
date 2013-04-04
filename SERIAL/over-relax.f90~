@@ -1,0 +1,84 @@
+       subroutine overrelax    
+! 
+!  updates the whole lattice using 3 su(2) subgroups
+! 
+      use lattsize
+      use precdef
+      use filecom
+      use umastcom
+      use neibcom
+
+      implicit none
+
+      integer :: i,j,k
+      integer :: eo,x,y,z,t
+!
+!
+      do eo=0,1
+!   Update all links in x-dir
+      do t=eo+1,leng4,2
+      do z=eo+1,leng3,2
+      do y=eo+1,leng2,2
+      do x=1,leng1
+
+      i = x + ni*(y-1) + ns*(z-1) + ncu*(t-1)
+      j = 1
+! Update link in the x-dir belonging to site i
+      call suboverrelax(j,i)
+      enddo
+      enddo
+      enddo
+      enddo
+!
+!   Update all links in y-dir
+!
+      do t=eo+1,leng4,2
+      do z=eo+1,leng3,2
+      do y=1,leng2
+      do x=eo+1,leng1,2
+
+      i = x + ni*(y-1) + ns*(z-1) + ncu*(t-1)
+      j = 2
+! Update link in the y-dir belonging to site i
+      call suboverrelax(j,i)
+      enddo
+      enddo
+      enddo
+      enddo
+!
+!   Update all links in z-dir
+!
+      do t=eo+1,leng4,2
+      do z=1,leng3
+      do y=eo+1,leng2,2
+      do x=eo+1,leng1,2
+
+      i = x + ni*(y-1) + ns*(z-1) + ncu*(t-1)
+      j = 3
+! Update link in the z-dir belonging to site i
+      call suboverrelax(j,i)
+      enddo
+      enddo
+      enddo
+      enddo
+!
+!   Update all links in t-dir
+!
+      do t=1,leng4
+      do z=eo+1,leng3,2
+      do y=eo+1,leng2,2
+      do x=eo+1,leng1,2
+
+      i = x + ni*(y-1) + ns*(z-1) + ncu*(t-1)
+      j = 4
+! Update link in the t-dir belonging to site i
+      call suboverrelax(j,i)
+      enddo
+      enddo
+      enddo
+      enddo
+!
+      enddo
+!
+      return
+      end

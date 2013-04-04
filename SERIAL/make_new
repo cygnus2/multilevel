@@ -1,0 +1,27 @@
+gcc  -O -c ranlxd_.c
+ifort  -O -mcmodel medium -shared-intel -c -I. headers.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. addr.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. storegauge.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. pol.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. init.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. unitar.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. cab-mar.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. sub-cab-mar.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. su2-update.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. matops.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. staples.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. plaq.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. over-relax.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. sub-over-relax.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. su2-overrelax.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. subrelax.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. boundrelax.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. makePOL.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. makecorr.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. makecorr1.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. b-update.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. sub-update.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. hit1.f90
+ifort  -O -mcmodel medium -shared-intel -c -I. ahit.f90
+ifort  -O -mcmodel medium -shared-intel -o su3 pol.o init.o unitar.o ranlxd_.o cab-mar.o sub-cab-mar.o su2-update.o matops.o storegauge.o addr.o headers.o staples.o plaq.o over-relax.o sub-over-relax.o su2-overrelax.o subrelax.o boundrelax.o makePOL.o makecorr.o makecorr1.o b-update.o sub-update.o hit1.o ahit.o
+rm *.o *.mod

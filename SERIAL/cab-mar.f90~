@@ -1,0 +1,43 @@
+       subroutine cabmar(beta)
+! 
+!  updates the whole lattice using 3 su(2) subgroups
+! 
+      use lattsize
+      use precdef
+      use filecom
+      use umastcom
+      use neibcom
+
+      implicit none
+
+      integer :: i,j,k
+      integer :: eot,eoz,eoy,eox,x,y,z,t
+
+      real :: beta
+!
+!
+!   Update all links in x-dir
+      do eot=0,1
+      do t=eot+1,leng4,2
+      do eoz=0,1
+      do z=eoz+1,leng3,2
+      do eoy=0,1
+      do y=eoy+1,leng2,2
+      do x=1,leng1
+      
+      i = x + ni*(y-1) + ns*(z-1) + ncu*(t-1)
+      j = 1
+! Update link in the x-dir belonging to site i
+      write(*,*) "i=",i,"j=",j
+      call subcabmar(beta,j,i)
+      enddo
+      enddo
+      enddo
+      enddo
+      enddo
+      enddo
+      enddo
+
+!
+      return
+      end
