@@ -1,0 +1,54 @@
+#######################################
+#  DOCUMENTATION FILE FOR MPI CODES   #
+#######################################
+
+The MPI code is organized so that each of the sublattices can be
+stored in a different processor in the same or a different machine.
+The functionality of the different codes can be understood by 
+browsing through the Makefile.
+
+1. ranlux is the random no generator 
+  (Discussions as to how it effectively acts in providing
+   independent random # sequence is postponed).
+2. headers.f90: Has all the definitions and the memory content of the
+   variables. For our present purposes, we just need to make sure that
+   the gauge field is correctly saved and referenced in each of the 
+   processorrs. Please note (and check): modules paramod,umastcom.
+   We can discuss these memory size allocations over skype.
+
+3. address.f90: The original adressing remains, which refers to the
+   whole lattice globally. The idea was to derive the adress on 
+   a local processor from the global adressing appropriately.
+
+4. unitar.f90: probably not important for just obtaining plaquette
+   values in a short run, since all variables are in double precision,
+   but need to make sure that this does not screw anything up in the main
+   program.
+
+5. init.f90: Routine initializations, need to make sure that are being
+   done correctly.
+
+6. matops.f90: Definitions of matrix multiplications. Just have a look
+   once, but everything should be okay.
+
+7. staples.f90, bndstaples.f90: Calculate the staples in the bulk and 
+   the boundary respectively. CAREFULLY check if the adressing of the
+   links is okay or not. Possibility of a mistake here.
+
+8. b-update.f90,bs-update.f90: heatbath of the bulk and the boundary links.
+   The updating should be okay; but again need to check for the existace
+   of wrong referencing.
+
+9. Analogues for the over-relaxation routes as well. For simplicity
+   we cna just turn them off for the reproducing the plaquette values.
+
+10. Also turn off multi-hit, POL.f90 (which calculates Polyakov loops), 
+    makecorr.f90 and makecorr1.f90 (the correlation functions).
+
+11. Carefully check both plaqfull.f90 and plaq.f90 which should measure the
+    plaquette. 
+
+12. The main program is pol.f90. Check only till line 150 of the main code.
+    The remaining part has correlation functions and observables, which 
+    has been commented out with a #IFDEF.
+
